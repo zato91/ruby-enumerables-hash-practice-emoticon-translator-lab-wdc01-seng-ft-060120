@@ -30,6 +30,6 @@ def get_english_meaning(link,emot_jap)
      "sorry"
     end
   end
-  x
+  eng_meaning
 end
 
