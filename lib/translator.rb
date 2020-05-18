@@ -22,7 +22,7 @@ def get_english_meaning(link,emot_jap)
   # code goes here
   yml_hash = load_library(link)
   yml_hash.each do |key,value| 
-    p key[japanese]
+    print  key[japanese]
     binding.pry
   end
   binding.pry
