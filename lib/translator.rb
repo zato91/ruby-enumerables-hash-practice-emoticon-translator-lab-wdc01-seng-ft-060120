@@ -23,8 +23,9 @@ def get_english_meaning(link,emot_jap)
   yml_hash = load_library(link)
   yml_hash.each do |key,value| 
    if value[:japanese] === emot_jap
-      key 
+      eng_meaning = key 
   end
-  key
+  eng_meaning
+  binding.pry
 end
 
