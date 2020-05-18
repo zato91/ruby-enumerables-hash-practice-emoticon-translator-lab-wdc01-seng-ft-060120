@@ -29,6 +29,6 @@ def get_english_meaning(link,emot_jap)
       p "sorry, that emoticon was not found"
     end
   end
-  eng_meaning
+  x
 end
 
