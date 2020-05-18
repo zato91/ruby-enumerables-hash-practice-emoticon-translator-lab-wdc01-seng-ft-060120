@@ -1,10 +1,11 @@
 # require modules here
 require 'pry'
 require 'yaml'
-emoti = YAML.load_file('./lib/emoticons.yml')
+
 
 def load_library(emoti)
   new_hash = Hash.new
+  emoti = YAML.load_file('./lib/emoticons.yml')
   emoti.each do |key,value| 
     new_hash[key] = {}
     new_hash[key][:english] = value[0]
