@@ -16,14 +16,14 @@ end
 
 def get_japanese_emoticon(link,emot_eng)
   # code goes here
-   eng_meaninge = "Sorry, that emoticon was not found"
+   japanese_emot = "Sorry, that emoticon was not found"
   yml_hash = load_library(link)
   yml_hash.each do |key,value| 
      if value[:english] == emot_eng
-      eng_meaning =   value[:japanese]
+      japanese_emot =   value[:japanese]
       end
   end
-   eng_meaning 
+   japanese_emot
 end
 
 def get_english_meaning(link,emot_jap)
