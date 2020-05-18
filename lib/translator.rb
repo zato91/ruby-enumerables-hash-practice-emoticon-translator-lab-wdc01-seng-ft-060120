@@ -14,11 +14,16 @@ def load_library(emoti)
  new_hash
 end
 
-def get_japanese_emoticon
+def get_japanese_emoticon(link,emoti_eng)
   # code goes here
 end
 
-def get_english_meaning
+def get_english_meaning(link,emot_jap)
   # code goes here
+  yml_hash = load_library(link)
+  yml_hash.each do  |key,value| 
+    p key[japanese]
+    binding.pry
+  end
 end
 
