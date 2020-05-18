@@ -26,7 +26,7 @@ def get_english_meaning(link,emot_jap)
     if value[:japanese] === emot_jap
       eng_meaning = key 
     else 
-      "sorry"
+     eng_meaning =  "sorry"
     end
   end
   eng_meaning
