@@ -14,8 +14,16 @@ def load_library(emoti)
  new_hash
 end
 
-def get_japanese_emoticon(link,emoti_eng)
+def get_japanese_emoticon(link,emot_eng)
   # code goes here
+   eng_meaninge = "Sorry, that emoticon was not found"
+  yml_hash = load_library(link)
+  yml_hash.each do |key,value| 
+     if value[:english] == emot_eng
+      eng_meaning =   value[:japanese]
+      end
+  end
+   eng_meaning 
 end
 
 def get_english_meaning(link,emot_jap)
