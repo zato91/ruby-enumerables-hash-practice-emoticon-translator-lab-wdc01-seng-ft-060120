@@ -3,9 +3,8 @@ require 'pry'
 require 'yaml'
 
 
-def load_library(emoti)
+def load_library(emoti = YAML.load_file('./lib/emoticons.yml'))
   new_hash = Hash.new
-  emoti = YAML.load_file('./lib/emoticons.yml')
   emoti.each do |key,value| 
     new_hash[key] = {}
     new_hash[key][:english] = value[0]
@@ -16,7 +15,7 @@ end
 
 def get_japanese_emoticon(link,emot_eng)
   # code goes here
-   japanese_emot = "Sorry, that emoticon was not found"
+  japanese_emot = "Sorry, that emoticon was not found"
   yml_hash = load_library(link)
   yml_hash.each do |key,value| 
      if value[:english] == emot_eng
