@@ -25,5 +25,6 @@ def get_english_meaning(link,emot_jap)
     p key[japanese]
     binding.pry
   end
+  binding.pry
 end
 
